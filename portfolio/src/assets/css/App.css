@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background-color: #212121;
+}
+.navBody{
+  background-color: #212121;
+  color:white;
+  display:flex;
+  width:100%;
+  padding-left: 2%;
+  padding-top: 2%;
+  justify-content:space-around;
+  font-size:2rem;
+}
+
+.navContent{
+  display:flex;
+  padding-top: 1%;
+  width:30%;
+  justify-content:space-evenly;
+  list-style: none;
+}
+.navContent li a{
+  color:white;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+}
+.navContent li a::after{
+  content:'';
+  position: absolute;
+  background: white;
+  height:2px;
+  left: 0;
+  bottom: 0;
+  width:0%;
+  transition: width .3s;
+}
+.navContent li a:hover:after{
+  width:100%;
+}
+
+.Main{
+  display:flex;
+  background-color: #212121;
+  height:100dvh;
+  width:100%;
+  flex-direction: row;
+  flex: 1;
+}
+.leftContainer{
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* background: blue; */
+}
+.leftContainer img{
+  width:78%;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 82%;
+}
+.rightContainer{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  color:white;
+  flex:1;
+}
+.rightContent h2{
+  font-size: 1.5rem;
+}
+.rightContent h1{
+  font-size: 2rem;
+}
+.btn{
+  display: flex;
+  width:35rem;
+  padding:20px;
+  border-radius: 20rem;
+  justify-content:space-evenly;
+  gap:2rem;
+}
+.btnLeft,.btnRight{
+  background:white;
+}
+
+.btn .btnRight:hover{
+  color:white;
+  background:black;
+  border:none;
+  transition:ease-in-out .3s;
+}
+.btn .btnLeft:hover{
+  color:white;
+  background: black;
+  border:none;
+  transition:ease-in-out .4s;
+}
